@@ -1,0 +1,347 @@
+:root {
+  --color-primary: #2990ff;
+  --color-green-dark: #28b485;
+  --color-green-light: #47cf73;
+  --color-white: #fff;
+  --color-gray: #f7f7f7;
+  --color-black: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.5rem;
+  padding: 0 3rem;
+  font-family: 'Lato', sans-serif;
+  color: #777;
+}
+
+#features,
+#showcase,
+#products {
+  padding: 4.5rem 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  background-color: var(--color-black);
+  border-bottom: 0.4rem solid #777;
+  position: fixed;
+  top: 0;
+  left: 3rem;
+  right: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+#header-img {
+  max-width: 100%;
+  height: 6rem;
+  border-radius: 50%;
+  margin: 0.3rem;
+}
+
+h1 {
+  color: #2990ff;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-link {
+  display: inline-block;
+  margin: 1.2rem;
+  text-decoration: none;
+  color: #2990ff;
+  color: var(--color-primary);
+  border-bottom: 2px solid transparent;
+  transition: all 0.8s;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #2990ff;
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.banner {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(102, 102, 102, 0.6),
+      rgba(67, 174, 250, 0.6)
+    ),
+    url(https://c.pxhere.com/photos/9b/e9/action_adventure_bicycle_bike_biking_clouds_cyclist_desert-933889.jpg!d);
+  background-size: cover;
+  background-position: center;
+}
+
+h2 {
+  margin-top: 5rem;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  color: var(--color-white);
+  letter-spacing: 2px;
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1);
+}
+
+#form input {
+  padding: 1rem;
+  font-family: inherit;
+  border: 1px solid transparent;
+  font-size: 1.6rem;
+  border-radius: 0.3rem;
+}
+
+#submit {
+  background-color: #28b485;
+  background-color: var(--color-green-dark);
+  color: #fff;
+  color: var(--color-white);
+  border: 1px solid #28b485;
+  border: 1px solid var(--color-green-dark);
+  border-radius: 0.3rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+}
+
+#features {
+  display: flex;
+  background: #f7f7f7;
+  background: var(--color-gray);
+}
+
+/*feature-box*/
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 2.5rem;
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  border-radius: 0.5rem;
+  width: calc(100% / 4);
+}
+
+.feature-box .icon {
+  font-size: 6rem;
+  color: #2990ff;
+  color: var(--color-primary);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.feature-box h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.feature-box p {
+  line-height: 1.45;
+}
+
+/* showcase */
+#showcase {
+  text-align: center;
+}
+
+#showcase p {
+  margin: 2rem auto 4rem auto;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#video {
+  max-width: 100%;
+}
+
+/* products */
+
+#products {
+  background: #f7f7f7;
+  background: var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prod-box {
+  background-color: #fff;
+  background-color: var(--color-white);
+  box-shadow: 0 1.5rem 5rem rgba(0, 0, 0, 0.15);
+  margin: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.prod-box h3 {
+  padding: 1.5rem;
+  font-weight: 300;
+  font-size: 2.1rem;
+  text-transform: uppercase;
+  color: #fff;
+  color: var(--color-white);
+  background-color: #2990ff;
+  background-color: var(--color-primary);
+}
+
+.prod-box ul {
+  padding: 2rem;
+}
+
+.prod-box li {
+  padding: 0.7rem;
+}
+
+.prod-box li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.prod-box .price-tag {
+  background-color: #2990ff;
+  background-color: var(--color-primary);
+  color: #fff;
+  color: var(--color-white);
+  padding: 2rem 0;
+}
+
+.only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.prod-box button {
+  padding: 1rem 2rem;
+  background-color: #47cf73;
+  background-color: var(--color-green-light);
+  text-transform: uppercase;
+  border: none;
+  color: #fff;
+  color: var(--color-white);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3);
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  background-color: var(--color-black);
+  color: #fff;
+  color: var(--color-white);
+  padding: 2rem;
+}
+
+footer ul {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 1.2rem;
+  color: #fff;
+  color: var(--color-white);
+  transition: all 0.3s;
+}
+
+footer a:hover {
+  color: #2990ff;
+  color: var(--color-primary);
+}
+
+/* media queries */
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 58%;
+  }
+
+  body {
+    padding: 0;
+  }
+
+  header {
+    flex-direction: column;
+    left: 0;
+    right: 0;
+  }
+
+  #header-img {
+    height: 4rem;
+  }
+
+  #features {
+    flex-direction: column;
+  }
+
+  .feature-box {
+    width: auto;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #products {
+    flex-direction: column;
+  }
+}
